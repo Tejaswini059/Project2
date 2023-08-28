@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Project Management Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Social Project Management Tool</h1>
+    </header>
+    
+    <main>
+        <section class="task-section">
+            <h2>Tasks</h2>
+            <ul id="task-list">
+                <!-- Task items will be added here dynamically -->
+            </ul>
+            <div>
+                <input type="text" id="task-title" placeholder="Task Title">
+                <input type="text" id="task-assignee" placeholder="Assignee">
+                <button onclick="createTask()">Create Task</button>
+            </div>
+        </section>
+
+        <section class="message-section">
+            <h2>Messages</h2>
+            <div id="message-feed">
+                <!-- Messages will be added here dynamically -->
+            </div>
+            <div>
+                <input type="text" id="message-input" placeholder="Type a message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
